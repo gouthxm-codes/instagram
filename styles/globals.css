@@ -1,3 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Btn {
+    @apply w-6 h-6 shrink-0 cursor-pointer
+  }
+
+  .font {
+    @apply font-bold text-sm leading-[18px];
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -19,6 +33,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
